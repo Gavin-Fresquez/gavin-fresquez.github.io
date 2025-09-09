@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Gavin Fresquez</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <a class="brand" href="index.html">Gavin Fresquez</a>
+      <a class="contact-link" href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <section>
+        <h3>Contact</h3>
+
+        <p class="address">
+          Barnett Shoals Rd, Athens, GA 30605
+          &nbsp;•&nbsp; (470) 281-7855
+          &nbsp;•&nbsp; <a href="mailto:gavinfresquez@gmail.com">gavinfresquez@gmail.com</a>
+        </p>
+        <p class="tagline">I like to code.</p>
+
+        <!-- One-column form -->
+        <form class="one-col" method="POST" action="https://formsubmit.co/el/bosuma">
+          <label for="name">Name*</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Gavin Fresquez
+        &nbsp;•&nbsp;
+        <a href="https://www.linkedin.com/in/gavin-fresquez-912377381" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script> 
+  </body>
+</html>

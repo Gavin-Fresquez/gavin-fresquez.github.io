@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Gavin Fresquez</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <a class="brand" href="index.html">Gavin Fresquez</a>
+      <a class="contact-link" href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Header splash -->
+    <header class="splash">
+      <div class="splash__inner">
+        <img class="headshot" src="images/gavin_fresquez.jpg" alt="Headshot of Gavin Fresquez" />
+        <h1>Gavin Fresquez</h1>
+        <p class="tagline">I like to code.</p>
+        <p class="address">
+          Barnett Shoals Rd, Athens, GA 30605
+          &nbsp;•&nbsp; (470) 281-7855
+          &nbsp;•&nbsp; <a href="mailto:gavinfresquez@gmail.com">gavinfresquez@gmail.com</a>
+        </p>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Education -->
+      <section>
+        <h3>Education</h3>
+        <dl class="kv">
+          <dt>University</dt><dd>University of Georgia</dd>
+          <dt>Degree</dt><dd>BS in Computer Science</dd>
+          <dt>GPA</dt><dd>3.9</dd>
+          <dt>Graduation</dt><dd>May 2027</dd>
+        </dl>
+      </section>
+
+      <!-- Honors and Awards -->
+      <section>
+        <h3>Honors and Awards</h3>
+        <dl class="kv">
+          <dt>President’s List</dt><dd>2023, 2024, 2025</dd>
+          <dt>Hope Scholarship Award</dt><dd>2023</dd>
+        </dl>
+      </section>
+
+      <!-- Skills -->
+      <section>
+        <h3>Skills</h3>
+        <ul class="bullets">
+          <li>Python</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>Spring Boot</li>
+          <li>Redis</li>
+        </ul>
+      </section>
+
+      <!-- Leadership and Experience -->
+      <section>
+        <h3>Leadership and Experience</h3>
+        <dl class="kv">
+          <dt>2022–2023</dt><dd><strong>Manager</strong>, <a href="https://www.panerabread.com/" target="_blank" rel="noopener">Panera Bread</a></dd>
+          <dt>2025</dt><dd><strong>Volunteer</strong>, United Way</dd>
+        </dl>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h3>Projects</h3>
+
+        <div class="three-col">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="images/project1.jpg" alt="SkyUtil project screenshot">
+            <div class="card-body">
+              <h4>Hypixel Museum Project</h4>
+              <p>Game utility web app. Built with HTML/CSS, Java, Spring Boot, Redis.</p>
+              <a href="https://github.com/Gavin-Fresquez/Hypixel-Museum-Project" target="_blank" rel="noopener">View repo</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="images/project2.jpg" alt="Weather App screenshot">
+            <div class="card-body">
+              <h4>Weather App</h4>
+              <p>JavaFX desktop app that displays weather based on coordinates.</p>
+              <a href="#" target="_blank" rel="noopener">View repo</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="images/project3.jpg" alt="Redis Server Clone screenshot">
+            <div class="card-body">
+              <h4>Redis Server Clone</h4>
+              <p>Python practice with TCP servers and the Redis protocol.</p>
+              <a href="#" target="_blank" rel="noopener">View repo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p> © <span id="year"></span> Gavin Fresquez
+        &nbsp;•&nbsp;
+        <a href="https://www.linkedin.com/in/gavin-fresquez-912377381" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
